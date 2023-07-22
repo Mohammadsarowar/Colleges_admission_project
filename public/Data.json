@@ -1,7 +1,7 @@
 [
     {
-        "college_image": "https://example.com/college_image.jpg",
-        "college_name": "Sample University",
+        "college_image": "https://images.pexels.com/photos/137618/pexels-photo-137618.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "college_name": "Barisal govt college",
         "admission_dates": {
           "fall": "September 1, 2023",
           "spring": "February 1, 2024"
@@ -24,7 +24,7 @@
             "Development of a groundbreaking vaccine",
             "Discovering a new species in the Amazon rainforest"
           ],
-          "number_of_research_projects": 1500
+          "number_of_research_projects": "1500"
         },
         "sports": {
           "popular_sports": ["Football", "Basketball", "Swimming"],
@@ -32,8 +32,8 @@
         }
       },
       {
-        "college_image": "https://example.com/college_image.jpg",
-        "college_name": "Sample University",
+        "college_image": "https://images.pexels.com/photos/2973323/pexels-photo-2973323.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "college_name": "Barguna govternment college",
         "admission_dates": {
           "fall": "September 1, 2023",
           "spring": "February 1, 2024"
@@ -56,13 +56,245 @@
             "Development of a groundbreaking vaccine",
             "Discovering a new species in the Amazon rainforest"
           ],
-          "number_of_research_projects": 1500
+          "number_of_research_projects": "1000"
+        },
+        "sports": {
+          "popular_sports": ["Football", "Basketball", "Swimming"],
+          "sports_facilities": ["Football field", "Basketball court", "Olympic-sized pool"]
+        }
+      },
+      {
+        "college_image": "https://images.pexels.com/photos/798721/pexels-photo-798721.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "college_name": "Dhaka College",
+        "admission_dates": {
+          "fall": "September 1, 2023",
+          "spring": "February 1, 2024"
+        },
+        "events": [
+          {
+            "event_name": "Freshman Orientation",
+            "date": "August 15, 2023",
+            "location": "Campus Auditorium"
+          },
+          {
+            "event_name": "Homecoming Celebration",
+            "date": "October 20, 2023",
+            "location": "College Grounds"
+          }
+        ],
+        "research_history": {
+          "founding_year": "1980",
+          "significant_discoveries": [
+            "Development of sustainable energy technology",
+            "Discovery of a new astronomical phenomenon"
+          ],
+          "number_of_research_projects": "2000"
+        },
+        "sports": {
+          "popular_sports": ["Soccer", "Tennis", "Swimming"],
+          "sports_facilities": ["Soccer field", "Tennis courts", "Indoor pool"]
+        }
+      },
+      {
+        "college_image": "https://images.pexels.com/photos/159514/yale-university-landscape-universities-schools-159514.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "college_name": "Khan academy college",
+        "admission_dates": {
+          "fall": "August 25, 2023",
+          "spring": "January 25, 2024"
+        },
+        "events": [
+          {
+            "event_name": "New Student Welcome",
+            "date": "August 18, 2023",
+            "location": "Student Center"
+          },
+          {
+            "event_name": "Alumni Reunion",
+            "date": "November 5, 2023",
+            "location": "College Grounds"
+          }
+        ],
+        "research_history": {
+          "founding_year": "1965",
+          "significant_discoveries": [
+            "Invention of a groundbreaking medical device",
+            "Unraveling the mysteries of deep-sea creatures"
+          ],
+          "number_of_research_projects": "1800"
+        },
+        "sports": {
+          "popular_sports": ["Basketball", "Baseball", "Track and Field"],
+          "sports_facilities": ["Basketball court", "Baseball field", "Track"]
+        }
+      },
+      {
+        "college_image": "https://images.pexels.com/photos/5147365/pexels-photo-5147365.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "college_name": "BM College of Engineering",
+        "admission_dates": {
+          "fall": "September 5, 2023",
+          "spring": "January 10, 2024"
+        },
+        "events": [
+          {
+            "event_name": "Welcome Back BBQ",
+            "date": "August 28, 2023",
+            "location": "College Quadrangle"
+          },
+          {
+            "event_name": "Founder's Day Celebration",
+            "date": "November 15, 2023",
+            "location": "Founder's Hall"
+          }
+        ],
+        "research_history": {
+          "founding_year": "1978",
+          "significant_discoveries": [
+            "Advancements in artificial intelligence",
+            "Discovery of a new species of marine life"
+          ],
+          "number_of_research_projects": "2200"
+        },
+        "sports": {
+          "popular_sports": ["Volleyball", "Badminton", "Swimming"],
+          "sports_facilities": ["Volleyball court", "Badminton court", "Indoor pool"]
+        }
+      },
+      {
+        "college_image": "https://images.pexels.com/photos/5838486/pexels-photo-5838486.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "college_name": "Epsilon College",
+        "admission_dates": {
+          "fall": "August 30, 2023",
+          "spring": "January 15, 2024"
+        },
+        "events": [
+          {
+            "event_name": "Campus Festival",
+            "date": "August 22, 2023",
+            "location": "College Amphitheater"
+          },
+          {
+            "event_name": "Annual Alumni Gala",
+            "date": "November 12, 2023",
+            "location": "Grand Ballroom"
+          }
+        ],
+        "research_history": {
+          "founding_year": "1992",
+          "significant_discoveries": [
+            "Breakthrough in environmental conservation",
+            "Uncovering ancient artifacts in archaeological digs"
+          ],
+          "number_of_research_projects": "2800"
+        },
+        "sports": {
+          "popular_sports": ["Hockey", "Squash", "Swimming"],
+          "sports_facilities": ["Hockey rink", "Squash courts", "Indoor pool"]
+        }
+      },
+      {
+        "college_image": "https://images.pexels.com/photos/13057058/pexels-photo-13057058.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "college_name": "ph College Dhaka",
+        "admission_dates": {
+          "fall": "September 10, 2023",
+          "spring": "February 5, 2024"
+        },
+        "events": [
+          {
+            "event_name": "Student Orientation",
+            "date": "August 29, 2023",
+            "location": "Student Center"
+          },
+          {
+            "event_name": "Homecoming Weekend",
+            "date": "November 19, 2023",
+            "location": "College Grounds"
+          }
+        ],
+        "research_history": {
+          "founding_year": "1950",
+          "significant_discoveries": [
+            "Breakthroughs in renewable energy technology",
+            "Exploring biodiversity in the rainforests"
+          ],
+          "number_of_research_projects": "3200"
+        },
+        "sports": {
+          "popular_sports": ["Rugby", "Cricket", "Swimming"],
+          "sports_facilities": ["Rugby field", "Cricket field", "Indoor pool"]
+        }
+      },
+      {
+        "college_image": "https://images.pexels.com/photos/14031189/pexels-photo-14031189.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "college_name": "Zeta Academy college",
+        "admission_dates": {
+          "fall": "September 15, 2023",
+          "spring": "February 10, 2024"
+        },
+        "events": [
+          {
+            "event_name": "Freshman Welcome Party",
+            "date": "August 31, 2023",
+            "location": "Campus Quad"
+          },
+          {
+            "event_name": "Alumni Homecoming",
+            "date": "November 25, 2023",
+            "location": "College Grounds"
+          }
+        ],
+        "research_history": {
+          "founding_year": "1985",
+          "significant_discoveries": [
+            "Pioneering advancements in space exploration",
+            "Studying endangered species conservation"
+          ],
+          "number_of_research_projects":" 2500"
+        },
+        "sports": {
+          "popular_sports": ["Golf", "Tennis", "Swimming"],
+          "sports_facilities": ["Golf course", "Tennis courts", "Indoor pool"]
+        }
+      },
+      {
+        "college_image": "https://images.pexels.com/photos/11823038/pexels-photo-11823038.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "college_name": "Amtoli College of Engineering",
+        "admission_dates": {
+          "fall": "September 1, 2023",
+          "spring": "February 1, 2024"
+        },
+        "events": [
+          {
+            "event_name": "Orientation Day",
+            "date": "August 15, 2023",
+            "location": "Campus Auditorium"
+          },
+          {
+            "event_name": "Alumni Homecoming",
+            "date": "October 20, 2023",
+            "location": "College Grounds"
+          }
+        ],
+        "research_history": {
+          "founding_year": "1975",
+          "significant_discoveries": [
+            "Development of a groundbreaking vaccine",
+            "Discovering a new species in the Amazon rainforest"
+          ],
+          "number_of_research_projects": "1500"
         },
         "sports": {
           "popular_sports": ["Football", "Basketball", "Swimming"],
           "sports_facilities": ["Football field", "Basketball court", "Olympic-sized pool"]
         }
       }
+      
+
+      
+      
+      
+      
+       
+      
       
       
 ]

@@ -90,7 +90,7 @@ const Navbar = () => {
             <NavLink
               to="/colleges"
               className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active bg-blue-500 text-white" : ""
+                isPending ? "pending 0" : isActive ? " active text-white" : " bg-blue-70"
               }
             >
              Colleges
@@ -136,7 +136,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 "
           >
             <li>
               <a className="justify-between">
@@ -148,7 +148,7 @@ const Navbar = () => {
               <button onClick={logOut}>Logout</button>
             </li>
           </ul>
-        </div>:<button className="btn m-2"><Link to="/login">Login</Link></button>}
+        </div>:<button className="btn btn-primary m-2"><Link to="/login">Login</Link></button>}
       </div>
     </div>
   );
