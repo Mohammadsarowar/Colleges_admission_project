@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { TbFidgetSpinner } from "react-icons/tb";
-import { FcGoogle } from "react-icons/fc";
+import { FcGoogle } from "react-icons/Fc";
 import { BsGithub, BsFacebook } from "react-icons/Bs";
 const Login = () => {
 

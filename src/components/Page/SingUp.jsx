@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { TbFidgetSpinner } from "react-icons/tb";
-import { FcGoogle } from "react-icons/fc";
+import { FcGoogle } from "react-icons/Fc";
 import { BsGithub, BsFacebook } from "react-icons/Bs";
 import { ToastContainer, toast } from 'react-toastify';
 import { useContext, useRef } from "react";
@@ -9,6 +9,7 @@ import { useContext, useRef } from "react";
 
 import { AuthContext } from "../../Providers/AuthProvider";
 import { saveUser } from "../../API/Auth";
+
 
 const SignUp = () => {
   const{
@@ -61,7 +62,7 @@ const SignUp = () => {
             updateUserProfile(name, imgUrl)
               .then(() => {
               toast.success('Signup successful')
-                saveUser(result.user)
+                saveUser(result?.user)
                 navigate(fromLocation, { replace: true });
               })
               .catch((err) => {

@@ -3,9 +3,9 @@ import {BsFillCalendarDateFill } from "react-icons/Bs";
 import {FcViewDetails } from "react-icons/Fc";
 
 import { Link } from "react-router-dom";
-const CollegesCard = ({ item }) => {
+const AdmissionCard = ({ item }) => {
   return (
-    <div key={item._id} className="card w-96 glass mx-auto focus:bg-slate-300">
+    <Link to='/inputFilds' key={item._id} className="card w-96 glass mx-auto focus:bg-slate-300 hover:bg-gray-200 hover:border-dotted border-2 border-indigo-600">
     <figure>
       <img className="bg-cover h-52 w-full" src={item.college_image} alt="Class!" />
     </figure>
@@ -26,16 +26,12 @@ const CollegesCard = ({ item }) => {
        
       <div className="divider"></div>
       <div className="card-actions justify-end ">
-{/* 
-<div> <h2 className=" text-lg font-serif">Research: {item?.research_history?.number_of_research_projects}</h2><br/>
- <h2 className=" text-lg font-serif">Founding year: {item?.research_history?.founding_year}</h2></div> */}
 
 
-        <Link to={`/colleges/${item?._id}`} className="btn flex btn-primary hover:bg-sky-700 text-white"><FcViewDetails className="text-2xl"/>Details</Link>
       </div>
     </div>
-  </div>
+  </Link>
   );
 };
 
-export default CollegesCard;
+export default AdmissionCard;

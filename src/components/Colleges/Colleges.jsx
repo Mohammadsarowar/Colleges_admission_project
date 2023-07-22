@@ -5,7 +5,7 @@ const Colleges = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/colleges")
+    fetch(`${import.meta.env.VITE_API_URL}/colleges`)
       .then(res => res.json())
       .then(data => {
         setData(data);
