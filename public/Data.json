@@ -1,0 +1,68 @@
+[
+    {
+        "college_image": "https://example.com/college_image.jpg",
+        "college_name": "Sample University",
+        "admission_dates": {
+          "fall": "September 1, 2023",
+          "spring": "February 1, 2024"
+        },
+        "events": [
+          {
+            "event_name": "Orientation Day",
+            "date": "August 15, 2023",
+            "location": "Campus Auditorium"
+          },
+          {
+            "event_name": "Alumni Homecoming",
+            "date": "October 20, 2023",
+            "location": "College Grounds"
+          }
+        ],
+        "research_history": {
+          "founding_year": "1975",
+          "significant_discoveries": [
+            "Development of a groundbreaking vaccine",
+            "Discovering a new species in the Amazon rainforest"
+          ],
+          "number_of_research_projects": 1500
+        },
+        "sports": {
+          "popular_sports": ["Football", "Basketball", "Swimming"],
+          "sports_facilities": ["Football field", "Basketball court", "Olympic-sized pool"]
+        }
+      },
+      {
+        "college_image": "https://example.com/college_image.jpg",
+        "college_name": "Sample University",
+        "admission_dates": {
+          "fall": "September 1, 2023",
+          "spring": "February 1, 2024"
+        },
+        "events": [
+          {
+            "event_name": "Orientation Day",
+            "date": "August 15, 2023",
+            "location": "Campus Auditorium"
+          },
+          {
+            "event_name": "Alumni Homecoming",
+            "date": "October 20, 2023",
+            "location": "College Grounds"
+          }
+        ],
+        "research_history": {
+          "founding_year": "1975",
+          "significant_discoveries": [
+            "Development of a groundbreaking vaccine",
+            "Discovering a new species in the Amazon rainforest"
+          ],
+          "number_of_research_projects": 1500
+        },
+        "sports": {
+          "popular_sports": ["Football", "Basketball", "Swimming"],
+          "sports_facilities": ["Football field", "Basketball court", "Olympic-sized pool"]
+        }
+      }
+      
+      
+]
