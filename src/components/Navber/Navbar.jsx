@@ -1,9 +1,12 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Navbar = () => {
+  const {user, logOut} = useContext(AuthContext);
+  console.log(user);
   return (
-    <div className="navbar z-10 bg-slate-100 py-2 font-mono">
+    <div className="navbar z-10 top-0 fixed bg-slate-100 py-2 font-mono">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -125,10 +128,10 @@ const Navbar = () => {
             className="input input-bordered w-24 md:w-auto"
           />
         </div>
-        <div className="dropdown dropdown-end">
+       { user ? <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              <img src={user?.photoURL} alt="Profile"/>
             </div>
           </label>
           <ul
@@ -137,15 +140,15 @@ const Navbar = () => {
           >
             <li>
               <a className="justify-between">
-                Profile
-                <span className="badge">New</span>
+                {user?.displayName}
+                
               </a>
             </li>
             <li>
-              <a>Logout</a>
+              <button onClick={logOut}>Logout</button>
             </li>
           </ul>
-        </div>
+        </div>:<button className="btn m-2"><Link to="/login">Login</Link></button>}
       </div>
     </div>
   );
