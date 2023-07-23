@@ -3,7 +3,9 @@ import {BsFillCalendarDateFill } from "react-icons/Bs";
 import {FcViewDetails } from "react-icons/Fc";
 
 import { Link } from "react-router-dom";
+import useTitle from "../Home/Shared/useTitle";
 const CollegesCard = ({ item }) => {
+  useTitle('Colleges');
   return (
     <div key={item._id} className="card w-96 glass mx-auto focus:bg-slate-300">
     <figure>

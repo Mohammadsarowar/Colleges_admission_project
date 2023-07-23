@@ -11,6 +11,7 @@ import PrivateRoute from "./PrivateRoute";
 import Admission from "../components/Admission/Admission";
 import CandidateForm from "../components/Admission/InputHub/InputText";
 import NotFoundPage from "../components/Home/Shared/Error";
+import Profile from "../components/Page/Profile/Profile";
 
 
 export const router = createBrowserRouter([
@@ -54,6 +55,10 @@ export const router = createBrowserRouter([
           {
             path:'/inputFilds',
             element:<CandidateForm/>
+          },
+          {
+            path:'/profile',
+            element:<Profile/>
           }
       ]
     },

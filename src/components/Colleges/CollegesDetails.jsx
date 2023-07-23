@@ -1,8 +1,10 @@
 import React from "react";
 
 import { Link, useLoaderData } from "react-router-dom";
+import useTitle from "../Home/Shared/useTitle";
 
 const CollegesDetails = () => {
+  useTitle('Colleges Details');
   const CollegesDetails = useLoaderData();
   console.log(CollegesDetails);
   return (

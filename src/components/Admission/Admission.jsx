@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import AdmissionCard from './AdmissionCard';
+import useTitle from '../Home/Shared/useTitle';
 
 const Admission = () => {
+  useTitle('Admission');
     const [data, setData] = useState([]);
 
     useEffect(() => {

@@ -2,16 +2,19 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { TbFidgetSpinner } from "react-icons/tb";
 import { FcGoogle } from "react-icons/Fc";
 import { BsGithub, BsFacebook } from "react-icons/Bs";
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { useContext, useRef } from "react";
 
 
 
 import { AuthContext } from "../../Providers/AuthProvider";
 import { saveUser } from "../../API/Auth";
+import Swal from "sweetalert2";
+import useTitle from "../Home/Shared/useTitle";
 
 
 const SignUp = () => {
+  useTitle('sign up')
   const{
     createUser,
     updateUserProfile,
@@ -27,6 +30,12 @@ const SignUp = () => {
     signInWithGoogle()
       .then((result) => {
         console.log(result.user);
+        Swal.fire({
+          icon: 'success',
+          title: 'Login in successfully',
+          showConfirmButton: false,
+          timer: 1500
+        })
         saveUser(result.user)
         navigate(from, { replace: true });
       })
@@ -61,7 +70,12 @@ const SignUp = () => {
           
             updateUserProfile(name, imgUrl)
               .then(() => {
-              toast.success('Signup successful')
+                Swal.fire({
+                  icon: 'success',
+                  title: 'Sign up in successfully',
+                  showConfirmButton: false,
+                  timer: 1500
+                })
                 saveUser(result?.user)
                 navigate(fromLocation, { replace: true });
               })
@@ -100,6 +114,7 @@ const SignUp = () => {
           noValidate=""
           action=""
           className="space-y-6 ng-untouched ng-pristine ng-valid"
+
         >
           <div className="space-y-4">
             <div>
@@ -113,6 +128,7 @@ const SignUp = () => {
                 placeholder="Enter Your Name Here"
                 className="w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-rose-500 bg-gray-200 text-gray-900"
                 data-temp-mail-org="0"
+                required
               />
             </div>
             <div>
@@ -125,6 +141,7 @@ const SignUp = () => {
                 id="image"
                 name="image"
                 accept="image/*"
+              
               />
             </div>
             <div>

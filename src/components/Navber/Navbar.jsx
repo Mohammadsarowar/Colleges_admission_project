@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
-
+import logo from '../../assets/74165534-college-logo-element.jpg'
 const Navbar = () => {
   const {user, logOut} = useContext(AuthContext);
   console.log(user);
@@ -72,7 +72,7 @@ const Navbar = () => {
           </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <Link to='/' className="btn btn-ghost normal-case text-xl"><img className="w-12 rounded-full" src={logo}/></Link>
       </div>
       <div className="navbar-center hidden lg:flex mx-auto text-center ">
         <ul className="menu menu-horizontal gap-5 font-bold font-serif">
@@ -136,13 +136,13 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 "
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-58 "
           >
             <li>
-              <a className="justify-between">
+              <Link to='/profile' className="justify-between ">
                 {user?.displayName}
-                
-              </a>
+                <button className="btn btn-xs">profile</button>
+              </Link>
             </li>
             <li>
               <button onClick={logOut}>Logout</button>
