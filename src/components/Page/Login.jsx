@@ -9,7 +9,7 @@ import Swal from "sweetalert2";
 import useTitle from "../Home/Shared/useTitle";
 const Login = () => {
   useTitle('login')
-  const { loading, setLoading, signIn, signInWithGoogle, resetPassword } =
+  const { loading, setLoading, signIn, signInWithGoogle, resetPassword, signInWithGitHub } =
   useContext(AuthContext)
   const [email, setEmail] = useState("") 
 const navigate = useNavigate()
@@ -61,7 +61,26 @@ const handleGoogleSignIn = () => {
       toast.error(err.message)
     })
 }
-
+//github login 
+const handleSignInWithGithub = () => {
+  signInWithGitHub()
+    .then((result) => {
+      console.log(result.user);
+      Swal.fire({
+        icon: 'success',
+        title: 'Login in successfully',
+        showConfirmButton: false,
+        timer: 1500
+      })
+      saveUser(result.user)
+      navigate(from, { replace: true });
+    })
+    .catch((err) => {
+      console.log(err.message);
+      toast.error(err.message);
+      setLoading(false);
+    });
+};
 //   handle password reset
 const handleReset = () => {
   // const email = emailRef.current.value
@@ -141,8 +160,8 @@ const handleReset = () => {
           className="flex justify-center items-center space-x-2 gap-5 my-2"
         >
           <FcGoogle onClick={handleGoogleSignIn} size={32} />
-           <BsGithub size={30} />
-           <BsFacebook size={32} />
+           <BsGithub onClick={handleSignInWithGithub} size={30} />
+      
         </div>
       </div>
     

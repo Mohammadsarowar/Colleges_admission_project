@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import logo from '../../assets/74165534-college-logo-element.jpg'
+import DarkMood from "../Home/Shared/DarkMood";
 const Navbar = () => {
   const {user, logOut} = useContext(AuthContext);
   console.log(user);
@@ -74,8 +75,8 @@ const Navbar = () => {
         </div>
         <Link to='/' className="btn btn-ghost normal-case text-xl"><img className="w-12 rounded-full" src={logo}/></Link>
       </div>
-      <div className="navbar-center hidden lg:flex mx-auto text-center ">
-        <ul className="menu menu-horizontal gap-5 font-bold font-serif">
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1 font-bold font-serif">
         <li>
             <NavLink
               to="/"
@@ -120,14 +121,10 @@ const Navbar = () => {
          
         </ul>
       </div>
-      <div className="flex-none navbar-end">
-        <div className="form-control">
-          <input
-            type="text"
-            placeholder="Search"
-            className="input input-bordered w-24 md:w-auto"
-          />
-        </div>
+      <div className=" navbar-end">
+      
+        <div className="mx-2 items-center text-xs"> <DarkMood/></div>
+       
        { user ? <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
@@ -148,7 +145,7 @@ const Navbar = () => {
               <button onClick={logOut}>Logout</button>
             </li>
           </ul>
-        </div>:<button className="btn btn-primary m-2"><Link to="/login">Login</Link></button>}
+        </div>:<button className="btn btn-primary m-2 rounded-full btn-outline"><Link to="/signup">Sign Up</Link></button>}
       </div>
     </div>
   );

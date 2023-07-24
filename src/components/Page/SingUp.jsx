@@ -21,6 +21,7 @@ const SignUp = () => {
     signInWithGoogle,
     loading,
     setLoading,
+    signInWithGitHub
   } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
@@ -28,6 +29,25 @@ const SignUp = () => {
 
   const handleSignInWithGoogle = () => {
     signInWithGoogle()
+      .then((result) => {
+        console.log(result.user);
+        Swal.fire({
+          icon: 'success',
+          title: 'Login in successfully',
+          showConfirmButton: false,
+          timer: 1500
+        })
+        saveUser(result.user)
+        navigate(from, { replace: true });
+      })
+      .catch((err) => {
+        console.log(err.message);
+        toast.error(err.message);
+        setLoading(false);
+      });
+  };
+  const handleSignInWithGithub = () => {
+    signInWithGitHub()
       .then((result) => {
         console.log(result.user);
         Swal.fire({
@@ -200,8 +220,7 @@ const SignUp = () => {
           className="flex justify-center items-center space-x-2 gap-5 my-10"
         >
           <FcGoogle onClick={handleSignInWithGoogle} size={32} />
-           <BsGithub size={30} />
-           <BsFacebook size={32} />
+           <BsGithub onClick={handleSignInWithGithub} size={30} />
         </div>
         <p className="px-6 text-sm text-center text-gray-400">
           Already have an account?{" "}

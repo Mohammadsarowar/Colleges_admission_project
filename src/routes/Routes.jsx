@@ -12,6 +12,7 @@ import Admission from "../components/Admission/Admission";
 import CandidateForm from "../components/Admission/InputHub/InputText";
 import NotFoundPage from "../components/Home/Shared/Error";
 import Profile from "../components/Page/Profile/Profile";
+import MyColleges from "../components/MyColleges/MyColleges";
 
 
 export const router = createBrowserRouter([
@@ -45,7 +46,7 @@ export const router = createBrowserRouter([
             ),
             loader: ({ params }) =>
               fetch(
-                `${import.meta.env.VITE_API_URL}/college/${params.id}`
+                `https://endgame-task-project-server.vercel.app/college/${params.id}`
               ),
           },
           {
@@ -54,11 +55,15 @@ export const router = createBrowserRouter([
           },
           {
             path:'/inputFilds',
-            element:<CandidateForm/>
+            element:<PrivateRoute><CandidateForm/></PrivateRoute>
           },
           {
             path:'/profile',
-            element:<Profile/>
+            element:<PrivateRoute><Profile/></PrivateRoute>
+          },
+          {
+            path:'/mycollege',
+            element:<PrivateRoute><MyColleges/> </PrivateRoute>,
           }
       ]
     },

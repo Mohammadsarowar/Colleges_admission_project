@@ -4,7 +4,7 @@ export const saveUser = user => {
       email: user.email,
     }
   
-    fetch(`${import.meta.env.VITE_API_URL}/users/${user?.email}`, {
+    fetch(`https://endgame-task-project-server.vercel.app/users/${user?.email}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json',
@@ -16,7 +16,7 @@ export const saveUser = user => {
   }
 
   export const addAdmission = async (roomData) => {
-    const response = await fetch(`${import.meta.env.VITE_API_URL}/admission`, {
+    const response = await fetch(`https://endgame-task-project-server.vercel.app/admission`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
